@@ -33,10 +33,12 @@ function displayBook(){
     bookContainer.appendChild(itembook)
 
     const toggleBtn = document.createElement("button");
-toggleBtn.textContent = "Toggle Read";
-toggleBtn.addEventListener("click", () => {
+
+    toggleBtn.textContent = "Toggle Read";
+    toggleBtn.addEventListener("click", () => {
     toggleRead(book.id);
 });
+
 itembook.appendChild(toggleBtn);
 
 const removeBtn =  document.createElement("button");
